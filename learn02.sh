@@ -12,7 +12,7 @@ var1="Hello World"
 # 变量引用，当处在 '' 单引号时，$name 不解析为变量
 # 使用 \ 反斜杠，对 " 双引号转义，使其被 echo 识别为普通字符进行输出
 # 花括号括住变量名，可以使程序可读性提高，也能避免因为后接符号使得变量名解析错误，推荐使用
-echo "this is var1: $var1 in \"\""
+echo "this is var1: ${var1} in \"\""
 echo "this is var1 using {}: ${var1} in \"\""
 echo 'this is var1: $var1 in '"'""'"
 

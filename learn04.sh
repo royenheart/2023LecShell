@@ -43,8 +43,10 @@ for t in ${l[@]}; do
     echo $t
 done
 
-if [[ $i -eq 10 ]]; then
+if [[ $i -ne 10 ]]; then
     echo "Loop While execute successfully"
+elif [[ $i -lt 1 ]]; then
+    echo "Loop in elif"
 else 
     echo "Loop While execute failed"
 fi
